@@ -18,7 +18,5 @@
         public const string ContainerInstance = "Container Instance";
 
         public const string Event = "Event";
-
-        public const string Process = "Process";
     }
 }
