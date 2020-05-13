@@ -75,6 +75,14 @@ namespace Structurizr
             }
         }
 
+        private HashSet<Event> _events = new HashSet<Event>();
+
+        public ISet<Event> Events
+        {
+            get => new HashSet<Event>(_events);
+            internal set => _events = new HashSet<Event>(value);
+        }
+
         private readonly SequentialIntegerIdGeneratorStrategy _idGenerator = new SequentialIntegerIdGeneratorStrategy();
 
         internal Model()
