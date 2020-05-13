@@ -10,9 +10,8 @@ namespace Structurizr
     /// A software system.
     /// </summary>
     [DataContract]
-    public sealed class SoftwareSystem : StaticStructureElement, IEquatable<SoftwareSystem>
+    public sealed class SoftwareSystem : StaticStructureElementWithEvents, IEquatable<SoftwareSystem>
     {
-
         /// <summary>
         /// The location of this software system.
         /// </summary>
@@ -125,6 +124,7 @@ namespace Structurizr
         {
             return this.Equals(softwareSystem as Element);
         }
+
 
     }
 }

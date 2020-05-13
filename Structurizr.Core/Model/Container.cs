@@ -10,7 +10,7 @@ namespace Structurizr
     /// A container (something that can execute code or host data).
     /// </summary>
     [DataContract]
-    public sealed class Container : StaticStructureElement, IEquatable<Container>
+    public sealed class Container : StaticStructureElementWithEvents, IEquatable<Container>
     {
 
         public override Element Parent { get; set; }
@@ -131,6 +131,5 @@ namespace Structurizr
         {
             return this.Equals(container as Element);
         }
-
     }
 }
